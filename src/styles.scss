@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+
+$background_primary: #3f2d1f;
+$background_secondary: #9e6d33;
+
+.scroll-border {
+  background-color: $background_primary;
+  border: 60px solid transparent ;
+  border-image: url(img/border.png) 33% round;
+  color: white;
+
+  & > div{
+    margin: -20px
+  }
+
+  img {
+    border: 5px solid $background_secondary;
+    border-radius: 30px;
+  }
+}
+
+body {
+  background-color: $background_secondary;
+}
